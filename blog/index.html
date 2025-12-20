@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tianxing Blog</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --text: #111;
+    --subtext: #666;
+    --bg: #fff;
+    --line: #e6e6e6;
+    --blue-gray-grad: linear-gradient(135deg, #5b7fa6 0%, #3c5a7a 50%, #1f3247 100%);
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", "Noto Sans SC", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+  }
+
+  .container {
+    width: 100%;
+    max-width: 720px;
+    padding: 5vw;
+    margin: 40px auto 120px auto;
+    box-sizing: border-box;
+  }
+
+  /* 顶部博客标题 */
+  .title {
+    font-size: clamp(30px, 7vw, 46px);
+    font-weight: 700;
+    margin-bottom: 40px;
+
+    background: var(--blue-gray-grad);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  /* 文章列表条目 */
+  .post {
+    padding: 24px 0;
+    border-bottom: 1px solid var(--line);
+    transition: 0.25s ease;
+  }
+
+  .post:hover {
+    transform: translateX(4px);
+  }
+
+  .post-title {
+    font-size: clamp(18px, 4.5vw, 22px);
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: var(--text);
+  }
+
+  .date {
+    font-size: clamp(13px, 3.5vw, 14px);
+    color: var(--subtext);
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  /* 深色模式 */
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --text: #eee;
+      --subtext: #aaa;
+      --bg: #111;
+      --line: #2a2a2a;
+    }
+  }
+</style>
+</head>
+
+<body>
+<div class="container">
+
+  <div class="title">Tianxing Chen's Blog</div>
+
+  <div>把看世界的方式存档 - turn back to my webpage <a href="../index.html" style="color: blue;">[Click Here]</a></div>
+
+  <!-- <a href="posts/2025-beng-acknowledgement.html">
+    <div class="post">
+      <div class="post-title">博士升学季回顾</div>
+      <div class="date">2025-04-27</div>
+    </div>
+  </a> -->
+
+  <a href="posts/2025-bachelor-acknowledgement.html">
+    <div class="post">
+      <div class="post-title">本科毕业致谢</div>
+      <div class="date">2025-04-27</div>
+    </div>
+  </a>
+
+  <a href="posts/2025-phd-application.html">
+    <div class="post">
+      <div class="post-title">本科升学回忆帖</div>
+      <div class="date">2025-04-10</div>
+    </div>
+  </a>
+
+  <a href="posts/2023-ACM-silver-medal.html">
+    <div class="post">
+      <div class="post-title">ACM-ICPC香港站银牌小记</div>
+      <div class="date">2023-01-14</div>
+    </div>
+  </a>
+
+  <a href="posts/2022-about-future.html">
+    <div class="post">
+      <div class="post-title">我的理想与初心</div>
+      <div class="date">2022-02-22</div>
+    </div>
+  </a>
+
+  <!-- 新文章继续添加即可 -->
+   <p style="margin-top: 20px;">
+        <center>
+          <a href="https://visitorbadge.io/status?path=https%3A%2F%2Ftianxingchen.github.io%2Fblog"><img src="https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Ftianxingchen.github.io%2Fblog&label=Tianxing's%20Blog&countColor=%23263759" /></a>            
+            <center> © Tianxing Chen</center>
+        </center>
+    </p>
+
+</div>
+</body>
+</html>
