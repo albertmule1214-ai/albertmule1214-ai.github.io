@@ -156,6 +156,45 @@
         			animation-play-state: paused;
         		}
     </style>
+      
+      <style>
+        /* =========================
+           Exchange / Visiting Style
+           ========================= */
+      
+        .exchange-grid {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 8px;
+          padding-left: 6px;
+          padding-right: 6px;
+        }
+      
+        .exchange-thumb {
+          width: 100%;
+          height: 94px;               /* 统一高度 */
+          object-fit: cover;
+          border-radius: 8px;
+          box-shadow: 3px 3px 4px rgba(0,0,0,0.18);
+          background: #f9f9f9;
+        }
+      
+        .exchange-thumb.logo {
+          object-fit: contain;
+          background: #ffffff;
+          padding: 6px;
+        }
+      
+        .exchange-caption {
+          font-size: 11px;
+          color: gray;
+          margin-top: 6px;
+          padding-left: 6px;
+          padding-right: 6px;
+        }
+      </style>
+      
+
     <script type="text/javascript" src="./files/jquery-1.12.4.min.js"></script>
     <meta name="google-site-verification" content="RmRCKoAXAT6rtzTsOTkyvuJiKVINXoP9VDPktJ0Hl3Q" />
 
@@ -520,7 +559,6 @@
             </script>
 
     </div>
-
 
 	<h2>Education</h2>
 	<div style="height: 10px"></div>
@@ -898,21 +936,164 @@
       </table>
       
     <h2>Exchange Experience</h2>
+  
+    <table id="tbPublications" width="100%" cellspacing="0">
+        <tbody>
+          <tr style="width: 100%;">
+            <!-- Left: image gallery (unified style) -->
+            <td width="240px" style="padding-top: 10px; padding-bottom: 10px; vertical-align: top;">
+              <div class="exchange-grid">
+                <!-- Logos -->
+                <img src="./files/exchange/usp/sjtu_logo.png" class="exchange-thumb logo" alt="SJTU Logo">
+                <img src="./files/exchange/usp/uaes_logo.png" class="exchange-thumb logo" alt="UAES Logo">
+      
+                <!-- Photos -->
+                <img src="./files/exchange/usp/camp_photo_1.JPG" class="exchange-thumb" alt="Bootcamp Photo 1">
+                <img src="./files/exchange/usp/camp_photo_2.JPG" class="exchange-thumb" alt="Bootcamp Photo 2">
+      
+                <!-- Certificate / Group -->
+                <img src="./files/exchange/usp/award_certificate.jpg" class="exchange-thumb" alt="Award Certificate">
+                <img src="./files/exchange/usp/group_photo.jpg" class="exchange-thumb" alt="Group Photo">
+              </div>
+            </td>
+      
+            <!-- Right: content -->
+            <td style="padding: 10px; vertical-align: top;">
+              <b style="font-size: 15px; color: #456fc3;">
+                Yangtze River Delta Research-Intensive University Alliance — UAES USP Innovation Bootcamp
+              </b>
+      
+              <div style="height: 4px;"></div>
+              <div style="font-size: 12px; font-style: italic;">
+                Aug. 26 – Aug. 29, 2025 · Shanghai Jiao Tong University (Shanghai)
+              </div>
+      
+              <div style="height: 6px;"></div>
+              <div style="font-size: 12px">
+                <b>Organizer:</b> United Automotive Electronic Systems (UAES) · USP Developer Platform
+              </div>
+      
+              <div style="height: 6px;"></div>
+              <div style="font-size: 12px; color: gray;">
+                <b>Focus:</b> Software-defined vehicles and SOA-based in-vehicle application development.
+                The bootcamp combined lectures with hands-on practice on the USP platform, covering
+                application development workflows and system integration.
+              </div>
+      
+              <div style="height: 6px;"></div>
+              <div style="font-size: 12px; color: gray;">
+                <b>My Participation:</b><br>
+                • Completed pre-study and toolchain setup, and participated in technical lectures and labs<br>
+                • Collaborated in a mixed-university team on an applied case study with iterative solution development<br>
+                • Contributed to final presentation and team deliverables
+              </div>
+      
+              <div style="height: 6px;"></div>
+              <div style="font-size: 12px; color: #c0392b;">
+                <b>🏆 Recognition:</b> Excellent Team
+              </div>
+      
+              <div style="height: 10px"></div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <table id="tbPublications" width="100%" cellspacing="0">
+        <tbody>
+          <tr style="width: 100%;">
+            <!-- Left: image gallery (unified exchange style) -->
+            <td width="240px" style="padding-top: 10px; padding-bottom: 10px; vertical-align: top;">
+              <div class="exchange-grid">
+                <!-- Logos / Campus -->
+                <img src="./files/exchange/pku/pku_logo.png" class="exchange-thumb logo" alt="PKU Logo">
+                <img src="./files/exchange/pku/campus.jpg" class="exchange-thumb" alt="PKU Campus">
+      
+                <!-- Class / Activity -->
+                <img src="./files/exchange/pku/class_photo1.jpg" class="exchange-thumb" alt="Class Photo">
+                <img src="./files/exchange/pku/class_photo2.jpg" class="exchange-thumb" alt="Class Photo">
 
+
+              </div>
+            </td>
+      
+            <!-- Right: content -->
+            <td style="padding: 10px; vertical-align: top;">
+              <b style="font-size: 15px; color: #456fc3;">
+                Peking University Summer School
+              </b>
+      
+              <div style="height: 4px;"></div>
+              <div style="font-size: 12px; font-style: italic;">
+                Jun. 30 – Jul. 12, 2025 · Peking University (Beijing)
+              </div>
+      
+              <div style="height: 6px;"></div>
+              <div style="font-size: 12px">
+                <b>Courses:</b><br>
+                • <b>Analog Integrated Circuit Design:</b> Methods, Tools, and Flow<br>
+                • <b>Physical Design Laboratory</b> for Integrated Circuits
+              </div>
+      
+              <div style="height: 6px;"></div>
+              <div style="font-size: 12px; color: gray;">
+                The summer school provided hands-on exposure to the integrated circuit design flow,
+                covering schematic design, circuit simulation, layout implementation, and
+                physical verification using industry-grade EDA tools.
+              </div>
+      
+              <div style="height: 6px;"></div>
+              <div style="font-size: 12px; color: gray;">
+                <b>Course Project (Analog IC Design):</b><br>
+                • Designed an eight-phase ring oscillator using full-custom methodology<br>
+                • Completed schematic design, PVT simulations, and post-layout verification<br>
+                • Analyzed oscillation frequency, phase spacing, and robustness across process corners
+              </div>
+      
+              <div style="height: 6px;"></div>
+              <div style="font-size: 12px; color: gray;">
+                <b>Laboratory Work (Physical Design):</b><br>
+                • Followed a structured lab workflow covering placement, routing, and verification<br>
+                • Completed step-by-step physical design experiments and design rule checks (DRC/LVS)
+              </div>
+      
+              <div style="height: 6px;"></div>
+              <div style="font-size: 12px">
+                <b>Performance:</b><br>
+                • Analog IC Design: <b>Pass</b><br>
+                • Physical Design Laboratory: <b>94 / 100</b>
+              </div>
+      
+              <div style="height: 6px;"></div>
+              <div style="font-size: 12px">
+                <b>Materials:</b>
+                <a href="./files/exchange/pku/transcript.pdf" target="_blank">
+                  Transcript
+                </a>
+                &nbsp;|&nbsp;
+                <a href="./files/exchange/pku/8-phase-ring-oscillator-report.pdf" target="_blank">
+                  Analog IC Course Project Report
+                </a>
+              </div>
+      
+              <div style="height: 10px"></div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
 
     <h2>Honors & Academic Awards</h2>
     <div class="award-grid">
         <div class="award-card">
-            <img src="./files/award/2023-ustc-scholarship-silver.jpg" alt="">
+            <img src="./files/award/placeholder.png" alt="">
             <div class="award-text">
-                Silver Award, Outstanding Student Scholarship, University of Science and Technology of China (2023)
+                Huawei Scholarship, 2025
             </div>
         </div>
         
         <div class="award-card">
-            <img src="./files/award/2024-ustc-scholarship-bronze.jpg" alt="">
+            <img src="./files/award/placeholder.png" alt="">
             <div class="award-text">
-                Bronze Award, Outstanding Student Scholarship, University of Science and Technology of China (2024)
+                Second Prize, Anhui Provincial Contest of the National Undergraduate Electronic Design Contest (NUEDC), 2025
             </div>
         </div>
         
@@ -920,6 +1101,13 @@
             <img src="./files/award/robogame-2024-second-prize.jpg" alt="">
             <div class="award-text">
                 Second Prize, RoboGame 2024 Robotics Competition, University of Science and Technology of China
+            </div>
+        </div>
+        
+        <div class="award-card">
+            <img src="./files/award/2024-ustc-scholarship-bronze.jpg" alt="">
+            <div class="award-text">
+                Bronze Award, Outstanding Student Scholarship, University of Science and Technology of China (2024)
             </div>
         </div>
         
@@ -938,18 +1126,12 @@
         </div>
         
         <div class="award-card">
-            <img src="./files/award/placeholder.png" alt="">
+            <img src="./files/award/2023-ustc-scholarship-silver.jpg" alt="">
             <div class="award-text">
-                Second Prize, Anhui Provincial Contest of the National Undergraduate Electronic Design Contest (NUEDC), 2025
+                Silver Award, Outstanding Student Scholarship, University of Science and Technology of China (2023)
             </div>
         </div>
         
-        <div class="award-card">
-            <img src="./files/award/placeholder.png" alt="">
-            <div class="award-text">
-                Huawei Scholarship, 2025
-            </div>
-        </div>
 
     </div>
 
@@ -961,13 +1143,13 @@
     <div id="awards-container" style="font-size: 15px; margin-top: 50px;">
         <ul>
             <!-- 前 5 条：默认展示 -->
-            <li>[2023–2024] Outstanding Communist Youth League Member, University of Science and Technology of China</li>
-            <div style="margin-top: -5px;"></div>
-
             <li>[2024] Student Grant (Tier B), Top Talent Training Program in Fundamental Sciences, USTC</li>
             <div style="margin-top: -5px;"></div>
 
             <li>[2024] First Prize (National), FLTRP “U-Cup” National College English Vocabulary Intelligent Learning Competition</li>
+            <div style="margin-top: -5px;"></div>
+
+            <li>[2023–2024] Outstanding Communist Youth League Member, University of Science and Technology of China</li>
             <div style="margin-top: -5px;"></div>
 
         </ul>
