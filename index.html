@@ -663,88 +663,90 @@
       </table>
       
 
-    <table id="tbPublications" width="100%" cellspacing="0">
-    <tbody>
-        <tr style="width: 100%;">
-        <td width="200px" style="padding-top: 10px; padding-bottom: 10px">
-            <div class="container">
-            <!-- TODO: 换成你的图片路径，比如作品照片/系统框图截图 -->
-            <img src="./files/work/nuedc.jpg" width="180px"
-                style="box-shadow: 4px 4px 4px #888888; margin-left: 10px; margin-right: 10px;">
-            </div>
-        </td>
-
-        <td style="padding: 10px">
-            <!-- Title -->
-            <b style="font-size: 15px; color: #456fc3;">
-            Circuit Model Exploration Device (NUEDC 2025, Problem G)
-            </b>
-
-            <!-- Time -->
-            <div style="height: 4px;"></div>
-            <div style="font-size: 12px; font-style: italic;">
-            Jul. 30, 2025 – Aug. 2, 2025
-            </div>
-
-            <!-- Contest / Award -->
-            <div style="height: 6px;"></div>
-            <div style="font-size: 12px">
-            <b>Contest:</b> National Undergraduate Electronic Design Contest (NUEDC) 2025 — Problem G: “Circuit Model Exploration Device”
-            </div>
-            <div style="font-size: 12px; color: #c0392b;">
+      <table id="tbPublications" width="100%" cellspacing="0">
+        <tbody>
+          <tr style="width: 100%;">
+            <td width="200px" style="padding-top: 10px; padding-bottom: 10px">
+              <div class="container">
+                <img src="./files/work/nuedc.jpg" width="180px"
+                     style="box-shadow: 4px 4px 4px #888888; margin-left: 10px; margin-right: 10px;">
+              </div>
+            </td>
+      
+            <td style="padding: 10px">
+              <!-- Title -->
+              <b style="font-size: 15px; color: #456fc3;">
+                Circuit Model Exploration Device (NUEDC 2025, Problem G)
+              </b>
+      
+              <!-- Time -->
+              <div style="height: 4px;"></div>
+              <div style="font-size: 12px; font-style: italic;">
+                Jul. 30, 2025 – Aug. 2, 2025
+              </div>
+      
+              <!-- Contest / Award -->
+              <div style="height: 6px;"></div>
+              <div style="font-size: 12px">
+                <b>Contest:</b> National Undergraduate Electronic Design Contest (NUEDC) 2025 — Problem G
+              </div>
+              <div style="font-size: 12px; color: #c0392b;">
                 <b>🏆 Award:</b> Anhui Provincial Second Prize
-              </div>              
-
-            <!-- Team -->
-            <div style="height: 6px;"></div>
-            <div style="font-size: 12px">
-            <b>Team:</b> Tingyu Zhu, Chengdong Xie, Muyang Zheng (3-person team)
-            </div>
-
-            <!-- Problem / Requirements -->
-            <div style="height: 6px;"></div>
-            <div style="font-size: 12px; color: gray;">
-            <b>Problem:</b> Build a known RC active filter (target transfer function) and an exploration device that (i) generates a programmable sine source up to ≥1 MHz with ≥3 Vpp, and (ii) automatically controls the known circuit to match target output amplitude across 100 Hz–3 kHz. In the advanced stage, the device must autonomously learn an unknown RLC circuit within 2 minutes and reproduce its output behavior. :contentReference[oaicite:0]{index=0} :contentReference[oaicite:1]{index=1}
-            </div>
-
-            <!-- System / Technical Highlights -->
-            <div style="height: 6px;"></div>
-            <div style="font-size: 12px; color: gray;">
-            <b>System & Technical Highlights:</b><br>
-            • Known-model circuit: 2nd-order Sallen–Key low-pass stage + independent gain stage to decouple filtering and amplification, enabling accurate matching to the target transfer function :contentReference[oaicite:2]{index=2}<br>
-            • Exploration device: FPGA + STM32 co-design — FPGA handles high-precision waveform generation / amplitude control, STM32 performs sampling, spectrum analysis, and model learning :contentReference[oaicite:3]{index=3} :contentReference[oaicite:4]{index=4}<br>
-            • Signal-processing pipeline: FFT-based analysis with Hann windowing, designed around a 512 kHz sampling rate and 4096-point FFT constraints to ensure adequate resolution and robustness :contentReference[oaicite:5]{index=5}<br>
-            • Learning & modeling: dual-frequency coarse scan (50 Hz / 5 MHz) for filter-type discrimination + fine sweep (1 kHz–50 kHz, 200 Hz step) for response characterization; parameters transmitted via UART protocol to drive FPGA synthesis :contentReference[oaicite:6]{index=6} :contentReference[oaicite:7]{index=7}
-            </div>
-
-            <!-- Your Contributions (hard technical) -->
-            <div style="height: 6px;"></div>
-            <div style="font-size: 12px; color: gray;">
-            <b>My Contributions:</b><br>
-            • Independently designed, soldered, and debugged key analog modules (filtering / attenuation / buffering / signal conditioning) to maintain signal integrity across a wide frequency range :contentReference[oaicite:8]{index=8}<br>
-            • Proposed and implemented the modeling workflow leveraging frequency-sweep excitation and FPGA–MCU partitioning, enabling fast identification and output reproduction under competition constraints :contentReference[oaicite:9]{index=9}<br>
-            • Consolidated system results and authored the final 8-page technical report (architecture, theory, implementation, and measurements)
-            </div>
-
-            <!-- Quantitative Results -->
-            <div style="height: 6px;"></div>
-            <div style="font-size: 12px">
-            <b>Results:</b> Measured magnitude response error ≤ 9.32% over 100 Hz–3 kHz; source frequency error ≤ 1.88% with output amplitude ≥ 3 Vpp; closed-loop-free amplitude targeting for the known circuit achieved ≤ 5% error. For unknown RLC, model learning completed within 2 minutes with 100% type identification; output reproduction peak error ≤ 3.8% (below 7 kHz). :contentReference[oaicite:10]{index=10}
-            </div>
-
-            <!-- Materials (optional) -->
-            <div style="height: 6px;"></div>
-            <div style="font-size: 12px">
-            <b>Materials:</b><br>
-            <!-- TODO: 如果你愿意公开，可放 Google Drive / PDF 外链；不建议把大文件放 repo -->
-            <a href="https://drive.google.com/drive/folders/1EfxoDVFi8uBYtsBhswXr46BXfIzffxtq?usp=drive_link" target="_blank">Supplementary Materials</a> &nbsp;|&nbsp;
-            </div>
-
-            <div style="height: 10px"></div>
-        </td>
-        </tr>
-    </tbody>
-    </table>
+              </div>
+      
+              <!-- Team -->
+              <div style="height: 6px;"></div>
+              <div style="font-size: 12px">
+                <b>Team:</b> Tingyu Zhu, Chengdong Xie, Muyang Zheng (3-person team)
+              </div>
+      
+              <!-- Problem -->
+              <div style="height: 6px;"></div>
+              <div style="font-size: 12px; color: gray;">
+                <b>Problem:</b> Design an active RC filter with a target transfer function and build an
+                exploration device capable of automatically identifying and reproducing the behavior
+                of an unknown RLC circuit within limited time.
+              </div>
+      
+              <!-- Technical Highlights -->
+              <div style="height: 6px;"></div>
+              <div style="font-size: 12px; color: gray;">
+                <b>Technical Highlights:</b><br>
+                • Analog front-end based on 2nd-order Sallen–Key low-pass topology with decoupled gain stage<br>
+                • FPGA + MCU (STM32) co-design for programmable excitation, signal acquisition, and modeling<br>
+                • Frequency-sweep–based system identification to characterize and reproduce unknown RLC responses
+              </div>
+      
+              <!-- Your Contributions -->
+              <div style="height: 6px;"></div>
+              <div style="font-size: 12px; color: gray;">
+                <b>My Contributions:</b><br>
+                • Independently designed, soldered, and debugged key analog modules (filter, attenuator, buffer)<br>
+                • Proposed the overall solution using FPGA-based frequency sweeping for circuit modeling<br>
+                • Authored the complete 8-page technical report covering design, implementation, and measurements
+              </div>
+      
+              <!-- Results -->
+              <div style="height: 6px;"></div>
+              <div style="font-size: 12px">
+                <b>Results:</b> Accurate magnitude response reproduction over the target band with
+                ≤10% error; unknown RLC circuit successfully identified and modeled within 2 minutes.
+              </div>
+      
+              <!-- Materials -->
+              <div style="height: 6px;"></div>
+              <div style="font-size: 12px">
+                <b>Materials:</b>
+                <a href="https://drive.google.com/drive/folders/1EfxoDVFi8uBYtsBhswXr46BXfIzffxtq?usp=drive_link" target="_blank">
+                  Supplementary Materials (Report / Photos)
+                </a>
+              </div>
+      
+              <div style="height: 10px"></div>
+            </td>
+          </tr>
+        </tbody>
+      </table>      
 
 
     <h2>Honors & Academic Awards</h2>
